@@ -1,0 +1,1 @@
+javascript:(function(){function convertToVscodeDev(url) %7B    if(url.startsWith('https://vscode.dev/')) %7B        return url%3B    %7D    let vscodeDevUrl %3D 'https%3A%2F%2Fvscode.dev%2F' %2B url%3B    return vscodeDevUrl%3B%7Dlet originalUrl %3D window.location.href%3Blet vscodeDevUrl %3D convertToVscodeDev(originalUrl)%3Bwindow.location.href %3D vscodeDevUrl%3B})();
